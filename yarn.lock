@@ -700,11 +700,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@fabora/consts@workspace:packages/consts":
+  version: 0.0.0-use.local
+  resolution: "@fabora/consts@workspace:packages/consts"
+  dependencies:
+    "@types/node": "npm:^25.5.0"
+    typescript: "npm:^6.0.2"
+  languageName: unknown
+  linkType: soft
+
 "@fabora/ts-config@workspace:packages/ts-config":
   version: 0.0.0-use.local
   resolution: "@fabora/ts-config@workspace:packages/ts-config"
-  dependencies:
-    next-themes: "npm:^0.4.6"
   languageName: unknown
   linkType: soft
 
