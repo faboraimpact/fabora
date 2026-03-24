@@ -43,21 +43,6 @@ export default function Home() {
           entreprises dans leur transition vers un impact positif et durable.
         </p>
 
-        {/* Email Signup */}
-        <form className="flex w-full max-w-md flex-col gap-3 sm:flex-row">
-          <input
-            type="email"
-            placeholder="Votre email"
-            className="flex-1 rounded-xl border border-[var(--fabora-neutral-300)] bg-white px-5 py-3.5 text-[var(--fabora-neutral-900)] placeholder:text-[var(--fabora-neutral-500)] focus:border-[var(--fabora-green-700)] focus:ring-2 focus:ring-[var(--fabora-green-100)] focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="rounded-xl bg-[var(--fabora-green-900)] px-6 py-3.5 font-medium text-white transition-all hover:bg-[var(--fabora-green-700)] hover:shadow-[var(--fabora-green-900)]/20 hover:shadow-lg"
-          >
-            Me notifier
-          </button>
-        </form>
-
         {/* Features Preview */}
         <div className="mt-16 grid gap-6 sm:grid-cols-3">
           <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/80 p-6 backdrop-blur-sm">
