@@ -13,14 +13,14 @@ post-merge:
   parallel: true
   jobs:
     - run: node -e "const fs=require('fs');const path='.next';fs.existsSync(path)&&fs.rmSync(path,{recursive:true,force:true})"
-      name: 'Clean .next directory'
+      name: "Clean .next directory"
     - run: yarn install
-      name: 'Install dependencies'
+      name: "Install dependencies"
 
 post-checkout:
   parallel: true
   jobs:
     - run: node -e "const fs=require('fs');const path='.next';fs.existsSync(path)&&fs.rmSync(path,{recursive:true,force:true})"
-      name: 'Clean .next directory'
+      name: "Clean .next directory"
     - run: yarn install
-      name: 'Install dependencies'
+      name: "Install dependencies"

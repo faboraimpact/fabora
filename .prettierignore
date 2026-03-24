@@ -1,0 +1,10 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+**/node_modules
+**/.next
+**/dist
+**/._DS_Store
+.DS_Store
+**/*.d.ts
