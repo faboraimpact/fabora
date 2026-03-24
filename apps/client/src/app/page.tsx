@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[var(--fabora-neutral-100)]">
       {/* Background decorative elements */}
-      <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[var(--fabora-green-100)] opacity-60 blur-3xl" />
-      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-[var(--fabora-orange-100)] opacity-60 blur-3xl" />
+      <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-[var(--fabora-green-100)] opacity-60 blur-3xl" />
+      <div className="absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-[var(--fabora-orange-100)] opacity-60 blur-3xl" />
 
       <main className="relative z-10 flex flex-col items-center px-6 text-center">
         {/* Logo / Brand */}
@@ -48,11 +48,11 @@ export default function Home() {
           <input
             type="email"
             placeholder="Votre email"
-            className="flex-1 rounded-xl border border-[var(--fabora-neutral-300)] bg-white px-5 py-3.5 text-[var(--fabora-neutral-900)] placeholder:text-[var(--fabora-neutral-500)] focus:border-[var(--fabora-green-700)] focus:outline-none focus:ring-2 focus:ring-[var(--fabora-green-100)]"
+            className="flex-1 rounded-xl border border-[var(--fabora-neutral-300)] bg-white px-5 py-3.5 text-[var(--fabora-neutral-900)] placeholder:text-[var(--fabora-neutral-500)] focus:border-[var(--fabora-green-700)] focus:ring-2 focus:ring-[var(--fabora-green-100)] focus:outline-none"
           />
           <button
             type="submit"
-            className="rounded-xl bg-[var(--fabora-green-900)] px-6 py-3.5 font-medium text-white transition-all hover:bg-[var(--fabora-green-700)] hover:shadow-lg hover:shadow-[var(--fabora-green-900)]/20"
+            className="rounded-xl bg-[var(--fabora-green-900)] px-6 py-3.5 font-medium text-white transition-all hover:bg-[var(--fabora-green-700)] hover:shadow-[var(--fabora-green-900)]/20 hover:shadow-lg"
           >
             Me notifier
           </button>

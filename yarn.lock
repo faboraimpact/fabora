@@ -679,9 +679,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fabora/client@workspace:apps/client":
+  version: 0.0.0-use.local
+  resolution: "@fabora/client@workspace:apps/client"
+  dependencies:
+    "@fabora/ui": "workspace:*"
+    "@tailwindcss/postcss": "npm:^4"
+    "@types/node": "npm:^20"
+    "@types/react": "npm:^19"
+    "@types/react-dom": "npm:^19"
+    babel-plugin-react-compiler: "npm:1.0.0"
+    eslint: "npm:^9"
+    eslint-config-next: "npm:16.2.1"
+    next: "npm:16.2.1"
+    next-themes: "npm:^0.4.6"
+    react: "npm:19.2.4"
+    react-dom: "npm:19.2.4"
+    tailwindcss: "npm:^4"
+    typescript: "npm:^5"
+  languageName: unknown
+  linkType: soft
+
 "@fabora/ts-config@workspace:packages/ts-config":
   version: 0.0.0-use.local
   resolution: "@fabora/ts-config@workspace:packages/ts-config"
+  dependencies:
+    next-themes: "npm:^0.4.6"
   languageName: unknown
   linkType: soft
 
@@ -698,6 +721,7 @@ __metadata:
     eslint: "npm:^9"
     eslint-config-next: "npm:16.2.1"
     lucide-react: "npm:^1.0.1"
+    next-themes: "npm:^0.4.6"
     prettier: "npm:^3.8.1"
     prettier-plugin-tailwindcss: "npm:^0.7.2"
     radix-ui: "npm:^1.4.3"
@@ -3706,26 +3730,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"client@workspace:apps/client":
-  version: 0.0.0-use.local
-  resolution: "client@workspace:apps/client"
-  dependencies:
-    "@fabora/ui": "workspace:*"
-    "@tailwindcss/postcss": "npm:^4"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^19"
-    "@types/react-dom": "npm:^19"
-    babel-plugin-react-compiler: "npm:1.0.0"
-    eslint: "npm:^9"
-    eslint-config-next: "npm:16.2.1"
-    next: "npm:16.2.1"
-    react: "npm:19.2.4"
-    react-dom: "npm:19.2.4"
-    tailwindcss: "npm:^4"
-    typescript: "npm:^5"
-  languageName: unknown
-  linkType: soft
-
 "cliui@npm:^8.0.1":
   version: 8.0.1
   resolution: "cliui@npm:8.0.1"
@@ -4168,9 +4172,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.263":
-  version: 1.5.321
-  resolution: "electron-to-chromium@npm:1.5.321"
-  checksum: 10c0/1272703857b8ac9868a75d495c141b71bad36adcb0df53393196da3819012fa2596ba48fccac750bdcb746a523d2a33543b36e9dc0ae727a55e7a6f00b2b155a
+  version: 1.5.322
+  resolution: "electron-to-chromium@npm:1.5.322"
+  checksum: 10c0/f8f338389879aae117143a7e28601b8129a51ff82bc641303c0def61ec68833828ca39f5252de30c0b0faf2139ce45ec16a126a6e02df4e7a1db9a138c5b024c
   languageName: node
   linkType: hard
 
@@ -4807,6 +4811,7 @@ __metadata:
     "@types/node": "npm:^25.5.0"
     conventional-changelog-atom: "npm:^5.1.0"
     lefthook: "npm:^2.1.4"
+    next-themes: "npm:^0.4.6"
     prettier: "npm:^3.8.1"
     prettier-plugin-tailwindcss: "npm:^0.7.2"
     typescript: "npm:^6.0.2"
@@ -5232,9 +5237,9 @@ __metadata:
   linkType: hard
 
 "graphql@npm:^16.12.0":
-  version: 16.13.1
-  resolution: "graphql@npm:16.13.1"
-  checksum: 10c0/0c7a9aea59504fbf3e0674f13ddb82935780f2a388e1db0ef41c3711c0ff8cb0a871c50d30d2d5288f32b946af3570d6f9ba8d13b03a330336f27121f9ac7a6b
+  version: 16.13.2
+  resolution: "graphql@npm:16.13.2"
+  checksum: 10c0/64e822a0a0e4398781e4bc9765b88d370c08261498b517add4b878038ef7be2005b6b394a79a5102b9379d57052f60bc7f23fec8f39808d101984a74772ebd9d
   languageName: node
   linkType: hard
 
@@ -6358,11 +6363,11 @@ __metadata:
   linkType: hard
 
 "lucide-react@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "lucide-react@npm:1.0.1"
+  version: 1.3.0
+  resolution: "lucide-react@npm:1.3.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/dc5834ef128bbdb9f7d1c6b8cc37b70807203b3dcb91977d3dfa28cbe995c7a0f099689e4191625292238fd18a5f815883d829bef26f318c35b79b336413862a
+  checksum: 10c0/e8db5f1c715d9fe01138554aef13e7c16a3caa3326dcbc44cea55b63fe90812500bd25bba4abead3ebb88aba83d95de24c28ce139824de74de9ba551b065bbf1
   languageName: node
   linkType: hard
 
@@ -6558,6 +6563,16 @@ __metadata:
   version: 1.0.0
   resolution: "negotiator@npm:1.0.0"
   checksum: 10c0/4c559dd52669ea48e1914f9d634227c561221dd54734070791f999c52ed0ff36e437b2e07d5c1f6e32909fc625fe46491c16e4a8f0572567d4dd15c3a4fda04b
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.4.6":
+  version: 0.4.6
+  resolution: "next-themes@npm:0.4.6"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+  checksum: 10c0/83590c11d359ce7e4ced14f6ea9dd7a691d5ce6843fe2dc520fc27e29ae1c535118478d03e7f172609c41b1ef1b8da6b8dd2d2acd6cd79cac1abbdbd5b99f2c4
   languageName: node
   linkType: hard
 

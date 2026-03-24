@@ -2,6 +2,7 @@
   "name": "fabora",
   "type": "module",
   "packageManager": "yarn@4.13.0",
+  "private": true,
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -22,5 +23,8 @@
     "lint:fix": "yarn workspaces foreach -A -p -i -t run lint:fix",
     "build": "yarn workspaces foreach -A -p -i -t run build",
     "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "next-themes": "^0.4.6"
   }
 }

@@ -1,4 +1,152 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 @source "../../../apps/**/*.{ts,tsx}";
 @source "../../../components/**/*.{ts,tsx}";
 @source "../**/*.{ts,tsx}";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+
+  /* Fabora Impact Brand Colors */
+  /* Primary: Vert forêt - confiance, accompagnement, maturité */
+  --fabora-green-900: #1e6b3c;
+  --fabora-green-700: #2e8b57;
+  --fabora-green-500: #6ab88a;
+  --fabora-green-100: #c8e6d5;
+
+  /* Accent: Orange vif - énergie, impact, dynamisme */
+  --fabora-orange-900: #e8622a;
+  --fabora-orange-700: #ed8055;
+  --fabora-orange-500: #f4a882;
+  --fabora-orange-100: #faddcc;
+
+  /* Neutrals */
+  --fabora-neutral-900: #1c1c1a;
+  --fabora-neutral-700: #5a5a56;
+  --fabora-neutral-500: #a0a09c;
+  --fabora-neutral-300: #ddddd8;
+  --fabora-neutral-100: #f9f9f7;
+  --fabora-neutral-0: #ffffff;
+
+  /* Theme variables */
+  --background: oklch(0.98 0.003 90); /* #F9F9F7 */
+  --foreground: oklch(0.15 0.005 90); /* #1C1C1A */
+  --card: oklch(1 0 0); /* #FFFFFF */
+  --card-foreground: oklch(0.15 0.005 90); /* #1C1C1A */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.005 90);
+  --primary: oklch(0.42 0.12 152); /* #1E6B3C - Vert forêt */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.52 0.11 152); /* #2E8B57 */
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.89 0.04 152); /* #C8E6D5 */
+  --muted-foreground: oklch(0.42 0.008 90); /* #5A5A56 */
+  --accent: oklch(0.6 0.18 38); /* #E8622A - Orange vif */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.88 0.008 90); /* #DDDDD8 */
+  --input: oklch(0.88 0.008 90);
+  --ring: oklch(0.42 0.12 152); /* Vert forêt */
+  --chart-1: oklch(0.42 0.12 152); /* Vert forêt */
+  --chart-2: oklch(0.6 0.18 38); /* Orange vif */
+  --chart-3: oklch(0.52 0.11 152); /* Vert secondaire */
+  --chart-4: oklch(0.67 0.15 42); /* Orange secondaire */
+  --chart-5: oklch(0.68 0.1 152); /* Vert clair */
+  --sidebar: oklch(0.98 0.003 90);
+  --sidebar-foreground: oklch(0.15 0.005 90);
+  --sidebar-primary: oklch(0.42 0.12 152);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.89 0.04 152);
+  --sidebar-accent-foreground: oklch(0.42 0.12 152);
+  --sidebar-border: oklch(0.88 0.008 90);
+  --sidebar-ring: oklch(0.42 0.12 152);
+}
+
+.dark {
+  --background: oklch(0.15 0.005 90); /* #1C1C1A */
+  --foreground: oklch(0.98 0.003 90); /* #F9F9F7 */
+  --card: oklch(0.2 0.008 90);
+  --card-foreground: oklch(0.98 0.003 90);
+  --popover: oklch(0.2 0.008 90);
+  --popover-foreground: oklch(0.98 0.003 90);
+  --primary: oklch(0.52 0.11 152); /* #2E8B57 - plus clair en dark mode */
+  --primary-foreground: oklch(0.15 0.005 90);
+  --secondary: oklch(0.68 0.1 152); /* #6AB88A */
+  --secondary-foreground: oklch(0.15 0.005 90);
+  --muted: oklch(0.25 0.01 90);
+  --muted-foreground: oklch(0.67 0.008 90); /* #A0A09C */
+  --accent: oklch(0.67 0.15 42); /* #ED8055 - plus clair en dark mode */
+  --accent-foreground: oklch(0.15 0.005 90);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.52 0.11 152);
+  --chart-1: oklch(0.52 0.11 152); /* Vert */
+  --chart-2: oklch(0.67 0.15 42); /* Orange */
+  --chart-3: oklch(0.68 0.1 152); /* Vert clair */
+  --chart-4: oklch(0.77 0.1 48); /* Orange clair */
+  --chart-5: oklch(0.89 0.04 152); /* Vert très clair */
+  --sidebar: oklch(0.18 0.008 90);
+  --sidebar-foreground: oklch(0.98 0.003 90);
+  --sidebar-primary: oklch(0.52 0.11 152);
+  --sidebar-primary-foreground: oklch(0.98 0.003 90);
+  --sidebar-accent: oklch(0.25 0.01 90);
+  --sidebar-accent-foreground: oklch(0.68 0.1 152);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.52 0.11 152);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
