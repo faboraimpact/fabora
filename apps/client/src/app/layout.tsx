@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fabora",
-  description: "Nous construisons une plateforme innovante pour accompagner les entreprises dans leur transition vers un impact positif et durable.",
+  description:
+    "Nous construisons une plateforme innovante pour accompagner les entreprises dans leur transition vers un impact positif et durable.",
 }
 
 export default function RootLayout({
