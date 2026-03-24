@@ -1,4 +1,15 @@
 {
   "name": "fabora",
-  "packageManager": "yarn@4.13.0"
+  "type": "module",
+  "packageManager": "yarn@4.13.0",
+  "devDependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@types/node": "^25.5.0",
+    "conventional-changelog-atom": "^5.1.0",
+    "lefthook": "^2.1.4",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "typescript": "^6.0.2"
+  }
 }

@@ -1,0 +1,26 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - run: yarn format:fix
+    - run: yarn lint:fix
+    - run: yarn build
+
+commit-msg:
+  jobs:
+    - run: yarn commitlint --edit {1}
+
+post-merge:
+  parallel: true
+  jobs:
+    - run: node -e "const fs=require('fs');const path='.next';fs.existsSync(path)&&fs.rmSync(path,{recursive:true,force:true})"
+      name: 'Clean .next directory'
+    - run: yarn install
+      name: 'Install dependencies'
+
+post-checkout:
+  parallel: true
+  jobs:
+    - run: node -e "const fs=require('fs');const path='.next';fs.existsSync(path)&&fs.rmSync(path,{recursive:true,force:true})"
+      name: 'Clean .next directory'
+    - run: yarn install
+      name: 'Install dependencies'
