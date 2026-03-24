@@ -1,65 +1,143 @@
-import Image from "next/image"
-
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[var(--fabora-neutral-100)]">
+      {/* Background decorative elements */}
+      <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[var(--fabora-green-100)] opacity-60 blur-3xl" />
+      <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-[var(--fabora-orange-100)] opacity-60 blur-3xl" />
+
+      <main className="relative z-10 flex flex-col items-center px-6 text-center">
+        {/* Logo / Brand */}
+        <div className="mb-8 flex items-center gap-3">
+          <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--fabora-green-900)]">
+            <span className="text-2xl font-bold text-white">F</span>
+          </div>
+          <div className="text-left">
+            <h1 className="text-2xl font-bold tracking-tight text-[var(--fabora-neutral-900)]">
+              Fabora
+            </h1>
+            <span className="text-sm font-medium text-[var(--fabora-orange-900)]">
+              Impact
+            </span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="bg-foreground text-background flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors hover:bg-[#383838] md:w-[158px] dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Coming Soon Badge */}
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[var(--fabora-green-100)] px-4 py-2">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--fabora-green-700)] opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--fabora-green-900)]" />
+          </span>
+          <span className="text-sm font-medium text-[var(--fabora-green-900)]">
+            En cours de développement
+          </span>
+        </div>
+
+        {/* Main Title */}
+        <h2 className="mb-4 text-4xl font-bold tracking-tight text-[var(--fabora-neutral-900)] sm:text-5xl md:text-6xl">
+          Bientôt disponible
+        </h2>
+
+        {/* Description */}
+        <p className="mb-10 max-w-lg text-lg leading-relaxed text-[var(--fabora-neutral-700)]">
+          Nous construisons une plateforme innovante pour accompagner les
+          entreprises dans leur transition vers un impact positif et durable.
+        </p>
+
+        {/* Email Signup */}
+        <form className="flex w-full max-w-md flex-col gap-3 sm:flex-row">
+          <input
+            type="email"
+            placeholder="Votre email"
+            className="flex-1 rounded-xl border border-[var(--fabora-neutral-300)] bg-white px-5 py-3.5 text-[var(--fabora-neutral-900)] placeholder:text-[var(--fabora-neutral-500)] focus:border-[var(--fabora-green-700)] focus:outline-none focus:ring-2 focus:ring-[var(--fabora-green-100)]"
+          />
+          <button
+            type="submit"
+            className="rounded-xl bg-[var(--fabora-green-900)] px-6 py-3.5 font-medium text-white transition-all hover:bg-[var(--fabora-green-700)] hover:shadow-lg hover:shadow-[var(--fabora-green-900)]/20"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Me notifier
+          </button>
+        </form>
+
+        {/* Features Preview */}
+        <div className="mt-16 grid gap-6 sm:grid-cols-3">
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/80 p-6 backdrop-blur-sm">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--fabora-green-100)]">
+              <svg
+                className="h-6 w-6 text-[var(--fabora-green-900)]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-[var(--fabora-neutral-900)]">
+              Accompagnement
+            </h3>
+            <p className="text-sm text-[var(--fabora-neutral-700)]">
+              Suivi personnalisé
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/80 p-6 backdrop-blur-sm">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--fabora-orange-100)]">
+              <svg
+                className="h-6 w-6 text-[var(--fabora-orange-900)]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-[var(--fabora-neutral-900)]">
+              Impact
+            </h3>
+            <p className="text-sm text-[var(--fabora-neutral-700)]">
+              Résultats mesurables
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/80 p-6 backdrop-blur-sm">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--fabora-green-100)]">
+              <svg
+                className="h-6 w-6 text-[var(--fabora-green-900)]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <h3 className="font-semibold text-[var(--fabora-neutral-900)]">
+              Communauté
+            </h3>
+            <p className="text-sm text-[var(--fabora-neutral-700)]">
+              Réseau engagé
+            </p>
+          </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="relative z-10 mt-16 pb-8 text-sm text-[var(--fabora-neutral-500)]">
+        &copy; {new Date().getFullYear()} Fabora Impact. Tous droits réservés.
+      </footer>
     </div>
   )
 }
