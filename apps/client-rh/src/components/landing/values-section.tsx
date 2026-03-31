@@ -44,8 +44,8 @@ export function ValuesSection() {
               Nos Valeurs Fondamentales
             </h2>
             <p className="mt-3 leading-relaxed font-medium text-muted-foreground md:mt-4">
-              Le socle de notre engagement pour l&apos;excellence opérationnelle et
-              l&apos;impact social durable en Afrique.
+              Le socle de notre engagement pour l&apos;excellence opérationnelle
+              et l&apos;impact social durable en Afrique.
             </p>
           </div>
           <div className="mb-4 hidden h-px grow bg-border md:mx-8 md:block" />
