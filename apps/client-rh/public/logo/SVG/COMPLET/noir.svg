@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.31 154.95">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Nexa-Black, Nexa;
+        font-size: 32.89px;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        font-family: Nexa-Light, Nexa;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path d="m.01,154.95c7.23-.35,12.44-3.46,15.92-9.44,1.69-2.91,2.3-6.12,2.3-9.46,0-41,.04-82.01-.06-123.01-.01-6.29,2.36-10.62,8.34-12.9-6.42,0-12.97-1.09-18.7,3.1C2.94,6.8.28,11.55.03,17.6c-.05,1.21-.02,2.43-.02,3.65,0,43.68,0,87.36,0,131.04v2.66Z"/>
+      <path d="m46.15,11.25C46.15,4.96,41.21,0,34.94,0c-6.27,0-11.28,4.94-11.33,11.18-.05,6.24,5.11,11.42,11.35,11.4,6.2-.02,11.19-5.07,11.19-11.33Z"/>
+    </g>
+    <path d="m28.26,154.95c5.89-.24,10.14-2.34,12.98-6.37,1.38-1.96,1.88-4.13,1.87-6.38,0-27.68.03-55.35-.05-83.03-.01-4.25,1.93-7.17,6.8-8.71-5.23,0-10.57-.74-15.24,2.09-3.97,2.41-6.14,5.61-6.35,9.7-.04.82-.01,1.64-.01,2.46,0,29.48,0,58.97,0,88.45v1.79Z"/>
+  </g>
+  <g>
+    <text class="cls-1" transform="translate(63.38 107.07)"><tspan class="cls-3" x="0" y="0">F</tspan><tspan class="cls-6" x="19.77" y="0">ABOR</tspan><tspan class="cls-9" x="122.23" y="0">A</tspan><tspan x="0" y="26.34">IM</tspan><tspan class="cls-5" x="41.51" y="26.34">P</tspan><tspan class="cls-2" x="63.22" y="26.34">A</tspan><tspan x="88.68" y="26.34">C</tspan><tspan class="cls-10" x="111.93" y="26.34">T</tspan></text>
+    <text class="cls-8" transform="translate(63.38 150.79)"><tspan class="cls-7" x="0" y="0">C</tspan><tspan x="9.88" y="0">ABINE</tspan><tspan class="cls-4" x="52.99" y="0">T</tspan><tspan x="60.83" y="0" xml:space="preserve"> RH</tspan></text>
+  </g>
+</svg>

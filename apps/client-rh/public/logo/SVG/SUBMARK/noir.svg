@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148.93 75.83">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        font-family: Nexa-Black, Nexa;
+        font-size: 32.89px;
+        font-weight: 800;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #231f20;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        font-family: Nexa-Light, Nexa;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(0 27.96)"><tspan class="cls-2" x="0" y="0">F</tspan><tspan class="cls-7" x="19.77" y="0">ABOR</tspan><tspan class="cls-9" x="122.23" y="0">A</tspan><tspan x="0" y="26.34">IM</tspan><tspan class="cls-6" x="41.51" y="26.34">P</tspan><tspan class="cls-1" x="63.22" y="26.34">A</tspan><tspan x="88.68" y="26.34">C</tspan><tspan class="cls-10" x="111.93" y="26.34">T</tspan></text>
+  <text class="cls-5" transform="translate(0 71.67)"><tspan class="cls-8" x="0" y="0">C</tspan><tspan x="9.88" y="0">ABINE</tspan><tspan class="cls-3" x="52.99" y="0">T</tspan><tspan x="60.83" y="0" xml:space="preserve"> RH</tspan></text>
+</svg>
