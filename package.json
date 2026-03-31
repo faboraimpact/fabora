@@ -1,12 +1,19 @@
 {
   "name": "fabora",
-  "type": "module",
   "packageManager": "yarn@4.13.0",
   "private": true,
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
+  "scripts": {
+    "dev:client": "yarn workspace @fabora/client dev",
+    "dev": "yarn workspaces foreach -A -p -i -t run dev",
+    "lint": "yarn workspaces foreach -A -p -i -t run lint",
+    "lint:fix": "yarn workspaces foreach -A -p -i -t run lint:fix",
+    "build": "yarn workspaces foreach -A -p -i -t run build",
+    "format:fix": "prettier --write ."
+  },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
@@ -16,15 +23,5 @@
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^6.0.2"
-  },
-  "scripts": {
-    "dev": "yarn workspaces foreach -A -p -i -t run dev",
-    "lint": "yarn workspaces foreach -A -p -i -t run lint",
-    "lint:fix": "yarn workspaces foreach -A -p -i -t run lint:fix",
-    "build": "yarn workspaces foreach -A -p -i -t run build",
-    "format:fix": "prettier --write ."
-  },
-  "dependencies": {
-    "next-themes": "^0.4.6"
   }
 }
