@@ -102,7 +102,7 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Top Right */}
-            <div className="absolute -top-4 -right-4 z-20 hidden rounded-2xl border border-white/50 bg-white/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
+            <div className="absolute -top-4 -right-4 z-20 hidden rounded-2xl border borderforeground/50 bg-background/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
               <div className="flex items-center gap-3">
                 <div className="flex size-10 items-center justify-center rounded-lg bg-accent text-white">
                   <Target className="size-5" />
@@ -117,25 +117,25 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Left */}
-            <div className="absolute top-1/4 -left-8 z-20 hidden rounded-2xl border border-white/50 bg-white/70 p-5 shadow-xl backdrop-blur-md xl:block">
+            <div className="absolute top-1/4 -left-8 z-20 hidden rounded-2xl border borderforeground/50 bg-background/70 p-5 shadow-xl backdrop-blur-md xl:block">
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <div className="size-2 rounded-full bg-secondary" />
                   <p className="text-sm font-bold">Plateforme Digitale</p>
                 </div>
-                <div className="h-1.5 w-32 overflow-hidden rounded-full bg-muted">
+                <div className="h-1.5 w-32 overflow-hidden rounded-full bg-foreground/20">
                   <div className="h-full w-2/3 rounded-full bg-primary" />
                 </div>
               </div>
             </div>
 
             {/* Floating Card - Bottom */}
-            <div className="absolute -bottom-6 left-1/4 z-20 rounded-2xl border border-white/50 bg-white/70 p-4 shadow-xl backdrop-blur-md md:-bottom-8">
+            <div className="absolute -bottom-6 left-1/4 z-20 rounded-2xl border borderforeground/50 bg-background/70 p-4 shadow-xl backdrop-blur-md md:-bottom-8">
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">
-                  <div className="size-10 rounded-full border-2 border-white bg-muted" />
-                  <div className="size-10 rounded-full border-2 border-white bg-muted-foreground/30" />
-                  <div className="flex size-10 items-center justify-center rounded-full border-2 border-white bg-primary text-xs font-bold text-white">
+                  <div className="size-10 rounded-full border-2 borderforeground bg-muted" />
+                  <div className="size-10 rounded-full border-2 borderforeground bg-muted-foreground/30" />
+                  <div className="flex size-10 items-center justify-center rounded-full border-2 borderforeground bg-primary text-xs font-bold text-white">
                     +12
                   </div>
                 </div>
