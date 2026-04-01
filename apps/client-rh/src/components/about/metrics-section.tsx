@@ -30,7 +30,7 @@ export function MetricsSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 text-center md:mb-16 lg:text-left">
-          <h2 className="mb-4 font-headline text-3xl font-black text-foreground md:text-4xl">
+          <h2 className="font-headline mb-4 text-3xl font-black text-foreground md:text-4xl">
             Notre Impact en Chiffres
           </h2>
           <div className="mx-auto h-1.5 w-24 bg-accent lg:mx-0" />
@@ -58,7 +58,7 @@ export function MetricsSection() {
                     }`}
                   />
                   <div
-                    className={`mb-2 font-headline text-5xl font-black tracking-tighter md:text-6xl ${
+                    className={`font-headline mb-2 text-5xl font-black tracking-tighter md:text-6xl ${
                       isPrimary ? "text-primary-foreground" : "text-foreground"
                     }`}
                   >

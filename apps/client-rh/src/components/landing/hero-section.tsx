@@ -102,7 +102,7 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Top Right */}
-            <div className="absolute -top-4 -right-4 z-20 hidden rounded-2xl border borderforeground/50 bg-background/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
+            <div className="borderforeground/50 absolute -top-4 -right-4 z-20 hidden rounded-2xl border bg-background/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
               <div className="flex items-center gap-3">
                 <div className="flex size-10 items-center justify-center rounded-lg bg-accent text-white">
                   <Target className="size-5" />
@@ -117,7 +117,7 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Left */}
-            <div className="absolute top-1/4 -left-8 z-20 hidden rounded-2xl border borderforeground/50 bg-background/70 p-5 shadow-xl backdrop-blur-md xl:block">
+            <div className="borderforeground/50 absolute top-1/4 -left-8 z-20 hidden rounded-2xl border bg-background/70 p-5 shadow-xl backdrop-blur-md xl:block">
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <div className="size-2 rounded-full bg-secondary" />
@@ -130,12 +130,12 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Bottom */}
-            <div className="absolute -bottom-6 left-1/4 z-20 rounded-2xl border borderforeground/50 bg-background/70 p-4 shadow-xl backdrop-blur-md md:-bottom-8">
+            <div className="borderforeground/50 absolute -bottom-6 left-1/4 z-20 rounded-2xl border bg-background/70 p-4 shadow-xl backdrop-blur-md md:-bottom-8">
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">
-                  <div className="size-10 rounded-full border-2 borderforeground bg-muted" />
-                  <div className="size-10 rounded-full border-2 borderforeground bg-muted-foreground/30" />
-                  <div className="flex size-10 items-center justify-center rounded-full border-2 borderforeground bg-primary text-xs font-bold text-white">
+                  <div className="borderforeground size-10 rounded-full border-2 bg-muted" />
+                  <div className="borderforeground size-10 rounded-full border-2 bg-muted-foreground/30" />
+                  <div className="borderforeground flex size-10 items-center justify-center rounded-full border-2 bg-primary text-xs font-bold text-white">
                     +12
                   </div>
                 </div>

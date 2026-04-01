@@ -15,7 +15,8 @@ export function ValuesSection() {
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: "radial-gradient(currentColor 0.5px, transparent 0.5px)",
+          backgroundImage:
+            "radial-gradient(currentColor 0.5px, transparent 0.5px)",
           backgroundSize: "24px 24px",
         }}
       />
@@ -23,7 +24,7 @@ export function ValuesSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8">
         {/* Header */}
         <div className="mb-12 text-center md:mb-20">
-          <h2 className="mb-4 font-headline text-3xl font-black text-background md:mb-6 md:text-4xl lg:text-5xl">
+          <h2 className="font-headline mb-4 text-3xl font-black text-background md:mb-6 md:text-4xl lg:text-5xl">
             Nos Valeurs Cardinales
           </h2>
           <p className="mx-auto max-w-2xl text-muted">

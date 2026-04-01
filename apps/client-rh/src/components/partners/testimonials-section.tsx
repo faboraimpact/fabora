@@ -32,7 +32,7 @@ export function TestimonialsSection() {
   return (
     <section className="bg-muted/50 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <h2 className="mb-12 text-center font-headline text-3xl font-black tracking-tight text-foreground md:mb-20 md:text-4xl">
+        <h2 className="font-headline mb-12 text-center text-3xl font-black tracking-tight text-foreground md:mb-20 md:text-4xl">
           Leurs Succès, <span className="text-primary">Notre Impact</span>
         </h2>
 
@@ -49,7 +49,7 @@ export function TestimonialsSection() {
 
               {/* Quote text */}
               <div className="relative z-10">
-                <p className="mb-6 text-base italic leading-relaxed text-foreground md:mb-8 md:text-lg">
+                <p className="mb-6 text-base leading-relaxed text-foreground italic md:mb-8 md:text-lg">
                   &quot;{testimonial.quote}&quot;
                 </p>
               </div>
@@ -64,10 +64,10 @@ export function TestimonialsSection() {
                   className="size-12 rounded-full object-cover md:size-14"
                 />
                 <div>
-                  <p className="font-headline font-black leading-none text-foreground">
+                  <p className="font-headline leading-none font-black text-foreground">
                     {testimonial.name}
                   </p>
-                  <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground md:text-xs">
+                  <p className="mt-1 text-[10px] font-bold tracking-widest text-muted-foreground uppercase md:text-xs">
                     {testimonial.role}
                   </p>
                 </div>

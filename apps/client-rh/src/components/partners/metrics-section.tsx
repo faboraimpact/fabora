@@ -15,7 +15,7 @@ export function MetricsSection() {
               <h3 className="font-headline text-3xl font-black text-primary md:text-4xl">
                 {metric.value}
               </h3>
-              <p className="mt-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground md:text-sm">
+              <p className="mt-2 text-[10px] font-bold tracking-widest text-muted-foreground uppercase md:text-sm">
                 {metric.label}
               </p>
             </div>

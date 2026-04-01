@@ -6,10 +6,10 @@ import {
 
 export default function Home() {
   return (
-      <main className="selection:bg-muted">
-        <HeroSection />
-        <ServiceGrid />
-        <ValuesSection />
-      </main>
+    <main className="selection:bg-muted">
+      <HeroSection />
+      <ServiceGrid />
+      <ValuesSection />
+    </main>
   )
 }

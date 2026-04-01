@@ -19,7 +19,7 @@ export function DecorativeShapes() {
       </div>
 
       {/* Forme africaine - haut droite */}
-      <div className="absolute right-10 top-40 hidden -rotate-12 opacity-10 lg:block">
+      <div className="absolute top-40 right-10 hidden -rotate-12 opacity-10 lg:block">
         <svg
           width="150"
           height="150"

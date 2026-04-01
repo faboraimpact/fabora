@@ -6,10 +6,10 @@ export function CtaSection() {
       <div className="mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-[2rem] bg-primary p-8 text-center md:rounded-[3rem] md:p-12 lg:p-20">
           {/* Decorative Blur */}
-          <div className="absolute -right-32 -top-32 size-64 rounded-full bg-secondary opacity-20 blur-3xl" />
+          <div className="absolute -top-32 -right-32 size-64 rounded-full bg-secondary opacity-20 blur-3xl" />
 
           <div className="relative z-10">
-            <h2 className="mb-6 font-headline text-3xl font-black tracking-tighter text-secondary md:mb-8 md:text-4xl lg:text-5xl xl:text-6xl">
+            <h2 className="font-headline mb-6 text-3xl font-black tracking-tighter text-secondary md:mb-8 md:text-4xl lg:text-5xl xl:text-6xl">
               Prêt à transformer votre capital humain ?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-base text-secondary/90 md:mb-12 md:text-lg lg:text-xl xl:text-2xl">

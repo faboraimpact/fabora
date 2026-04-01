@@ -1,4 +1,4 @@
-import { Button } from "@fabora/ui/components/button";
+import { Button } from "@fabora/ui/components/button"
 
 export function CtaSection() {
   return (
@@ -10,7 +10,7 @@ export function CtaSection() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-2xl">
-          <h2 className="mb-4 font-headline text-3xl font-black leading-tight text-background sm:mb-6 sm:text-4xl md:text-5xl">
+          <h2 className="font-headline mb-4 text-3xl leading-tight font-black text-background sm:mb-6 sm:text-4xl md:text-5xl">
             Vous avez encore des questions ?
           </h2>
           <p className="mb-8 text-base text-muted opacity-80 sm:mb-10 sm:text-lg">
@@ -26,10 +26,9 @@ export function CtaSection() {
             >
               Contactez-nous
             </Button>
-            
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

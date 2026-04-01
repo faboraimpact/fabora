@@ -17,7 +17,7 @@ export function StorySection() {
           </div>
           {/* Floating Quote Card */}
           <div className="absolute -bottom-6 -left-4 max-w-xs rounded-2xl bg-card/90 p-6 shadow-lg backdrop-blur-sm md:-left-6 md:p-8">
-            <p className="font-headline text-base font-bold italic leading-tight text-primary md:text-lg">
+            <p className="font-headline text-base leading-tight font-bold text-primary italic md:text-lg">
               &quot;Aligner les standards internationaux aux racines
               africaines.&quot;
             </p>
@@ -26,7 +26,7 @@ export function StorySection() {
 
         {/* Content */}
         <div className="w-full lg:w-1/2">
-          <h2 className="mb-6 font-headline text-3xl font-black leading-tight text-foreground md:mb-8 md:text-4xl lg:text-5xl">
+          <h2 className="font-headline mb-6 text-3xl leading-tight font-black text-foreground md:mb-8 md:text-4xl lg:text-5xl">
             Notre Histoire &amp; Vision
           </h2>
           <div className="space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -45,7 +45,7 @@ export function StorySection() {
             </p>
             <div className="flex gap-4 pt-4">
               <div className="mt-3 h-1 w-12 bg-primary" />
-              <p className="font-bold italic text-foreground">
+              <p className="font-bold text-foreground italic">
                 Nous croyons en un capital humain agile, éthique et performant.
               </p>
             </div>

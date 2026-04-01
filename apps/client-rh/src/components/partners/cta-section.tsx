@@ -7,7 +7,7 @@ export function CtaSection() {
         <div className="relative overflow-hidden rounded-3xl bg-primary p-8 md:rounded-[3rem] md:p-12 lg:p-20">
           {/* Content */}
           <div className="relative z-10 max-w-2xl">
-            <h2 className="mb-6 font-headline text-3xl font-black leading-tight text-primary-foreground md:mb-8 md:text-4xl lg:text-5xl">
+            <h2 className="font-headline mb-6 text-3xl leading-tight font-black text-primary-foreground md:mb-8 md:text-4xl lg:text-5xl">
               Devenez un partenaire <br />
               stratégique dès aujourd&apos;hui.
             </h2>
@@ -34,7 +34,7 @@ export function CtaSection() {
           </div>
 
           {/* Abstract Geometric Decoration */}
-          <div className="absolute bottom-0 right-0 top-0 hidden w-1/3 md:block">
+          <div className="absolute top-0 right-0 bottom-0 hidden w-1/3 md:block">
             <div className="size-full opacity-20">
               <svg
                 viewBox="0 0 100 100"

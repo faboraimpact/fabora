@@ -10,15 +10,15 @@ export function Hero404() {
     <section className="relative z-10 w-full max-w-4xl px-4 text-center">
       {/* Grand 404 stylisé */}
       <div className="relative mb-6 inline-block md:mb-8">
-        <h1 className="select-none font-headline text-[8rem] font-extrabold leading-none tracking-tighter text-muted/50 sm:text-[10rem] md:text-[14rem] lg:text-[18rem]">
+        <h1 className="font-headline text-[8rem] leading-none font-extrabold tracking-tighter text-muted/50 select-none sm:text-[10rem] md:text-[14rem] lg:text-[18rem]">
           404
         </h1>
 
         {/* Cercle de blur décoratif */}
-        <div className="absolute left-1/2 top-1/2 -z-10 size-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-3xl sm:size-48 md:size-64" />
+        <div className="absolute top-1/2 left-1/2 -z-10 size-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-3xl sm:size-48 md:size-64" />
 
         {/* Icône explore flottante (desktop) */}
-        <div className="absolute -bottom-4 right-1/4 hidden rotate-6 rounded-xl bg-background p-4 shadow-xl md:right-1/3 md:block">
+        <div className="absolute right-1/4 -bottom-4 hidden rotate-6 rounded-xl bg-background p-4 shadow-xl md:right-1/3 md:block">
           <Compass className="size-8 fill-accent text-accent md:size-10" />
         </div>
       </div>
@@ -29,7 +29,7 @@ export function Hero404() {
           Oups ! Page introuvable.
         </h2>
 
-        <p className="mx-auto max-w-md text-base font-medium leading-relaxed text-muted-foreground sm:max-w-lg md:max-w-xl md:text-lg lg:text-xl">
+        <p className="mx-auto max-w-md text-base leading-relaxed font-medium text-muted-foreground sm:max-w-lg md:max-w-xl md:text-lg lg:text-xl">
           Il semble que vous vous soyez égaré. Ne vous inquiétez pas, nous
           allons vous ramener sur le bon chemin.
         </p>

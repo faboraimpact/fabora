@@ -1,11 +1,11 @@
-"use client";
+"use client"
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@fabora/ui/components/accordion";
+} from "@fabora/ui/components/accordion"
 
 const faqItems = [
   {
@@ -32,13 +32,13 @@ const faqItems = [
     answer:
       "Pour des postes de cadres et experts, le processus dure généralement entre 4 et 6 semaines, incluant les phases de sourcing, d'évaluation approfondie et de sélection finale avec le client.",
   },
-];
+]
 
 export function FaqAccordion() {
   return (
     <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:py-20">
       {/* Section Title */}
-      <h2 className="mb-8 flex items-center gap-3 font-headline text-2xl font-black sm:text-3xl">
+      <h2 className="font-headline mb-8 flex items-center gap-3 text-2xl font-black sm:text-3xl">
         <span className="h-6 w-1.5 rounded-full bg-accent sm:h-8 sm:w-2" />
         Questions Fréquentes
       </h2>
@@ -51,7 +51,7 @@ export function FaqAccordion() {
             value={item.id}
             className="rounded-xl border border-transparent bg-card transition-all hover:border-border/30"
           >
-            <AccordionTrigger className="px-5 py-4 font-headline text-base font-bold hover:no-underline sm:px-8 sm:py-6 sm:text-lg">
+            <AccordionTrigger className="font-headline px-5 py-4 text-base font-bold hover:no-underline sm:px-8 sm:py-6 sm:text-lg">
               {item.question}
             </AccordionTrigger>
             <AccordionContent className="px-5 pb-4 text-sm leading-relaxed text-muted-foreground sm:px-8 sm:pb-6 sm:text-base">
@@ -61,5 +61,5 @@ export function FaqAccordion() {
         ))}
       </Accordion>
     </section>
-  );
+  )
 }

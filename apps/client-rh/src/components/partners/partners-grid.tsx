@@ -54,7 +54,7 @@ export function PartnersGrid() {
               className="group flex aspect-square cursor-pointer flex-col items-center justify-center bg-background p-6 transition-colors hover:bg-muted md:p-12"
             >
               <partner.icon className="mb-2 size-8 text-muted-foreground opacity-60 transition-opacity group-hover:opacity-100 md:size-10" />
-              <span className="text-center text-[10px] font-bold uppercase tracking-widest text-foreground opacity-60 transition-opacity group-hover:opacity-100 md:text-xs">
+              <span className="text-center text-[10px] font-bold tracking-widest text-foreground uppercase opacity-60 transition-opacity group-hover:opacity-100 md:text-xs">
                 {partner.name}
               </span>
             </div>

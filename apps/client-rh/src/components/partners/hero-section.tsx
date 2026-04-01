@@ -2,16 +2,16 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <header className="relative overflow-hidden pb-16 pt-24 md:pb-24 md:pt-32 lg:pt-40">
+    <header className="relative overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-40">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 md:flex-row md:gap-16 md:px-8">
         {/* Content */}
         <div className="z-10 w-full md:w-3/5">
-          <span className="mb-4 block text-xs font-bold uppercase tracking-widest text-accent">
+          <span className="mb-4 block text-xs font-bold tracking-widest text-accent uppercase">
             Partenariats Stratégiques
           </span>
-          <h1 className="mb-6 font-headline text-4xl font-black leading-tight tracking-tighter text-foreground md:mb-8 md:text-5xl lg:text-7xl lg:leading-[1.1]">
+          <h1 className="font-headline mb-6 text-4xl leading-tight font-black tracking-tighter text-foreground md:mb-8 md:text-5xl lg:text-7xl lg:leading-[1.1]">
             Ils nous font <br />
-            <span className="italic text-primary">confiance.</span>
+            <span className="text-primary italic">confiance.</span>
           </h1>
           <p className="mb-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:mb-10 md:text-lg lg:text-xl">
             Fabora Impact accompagne les fleurons de l&apos;économie africaine
@@ -44,7 +44,7 @@ export function HeroSection() {
             <span className="font-headline text-3xl font-black text-primary md:text-4xl">
               12+
             </span>
-            <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground md:mt-2 md:text-xs">
+            <p className="mt-1 text-[10px] font-bold tracking-wider text-muted-foreground uppercase md:mt-2 md:text-xs">
               Secteurs d&apos;activité couverts
             </p>
           </div>
@@ -52,7 +52,7 @@ export function HeroSection() {
       </div>
 
       {/* Decorative Background Pattern */}
-      <div className="absolute right-0 top-0 -z-10 opacity-5">
+      <div className="absolute top-0 right-0 -z-10 opacity-5">
         <svg
           width="400"
           height="400"

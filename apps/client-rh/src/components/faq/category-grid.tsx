@@ -1,4 +1,4 @@
-import { Users, UserPlus, Monitor, Brain } from "lucide-react";
+import { Users, UserPlus, Monitor, Brain } from "lucide-react"
 
 const categories = [
   {
@@ -29,7 +29,7 @@ const categories = [
       "Audit et accompagnement pour transformer votre capital humain.",
     variant: "muted" as const,
   },
-];
+]
 
 const variantStyles = {
   primary: {
@@ -48,15 +48,15 @@ const variantStyles = {
     iconBg: "bg-muted",
     iconColor: "text-foreground",
   },
-};
+}
 
 export function CategoryGrid() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:pb-20">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
         {categories.map((category) => {
-          const styles = variantStyles[category.variant];
-          const Icon = category.icon;
+          const styles = variantStyles[category.variant]
+          const Icon = category.icon
 
           return (
             <div
@@ -70,16 +70,16 @@ export function CategoryGrid() {
               >
                 <Icon className={`h-6 w-6 sm:h-7 sm:w-7 ${styles.iconColor}`} />
               </div>
-              <h3 className="mb-2 font-headline text-lg font-extrabold sm:text-xl">
+              <h3 className="font-headline mb-2 text-lg font-extrabold sm:text-xl">
                 {category.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {category.description}
               </p>
             </div>
-          );
+          )
         })}
       </div>
     </section>
-  );
+  )
 }

@@ -29,7 +29,7 @@ export function TeamSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 text-center md:mb-16">
-          <h2 className="mb-4 font-headline text-3xl font-black text-foreground md:text-4xl lg:text-5xl">
+          <h2 className="font-headline mb-4 text-3xl font-black text-foreground md:text-4xl lg:text-5xl">
             L&apos;Équipe Dirigeante
           </h2>
           <p className="mx-auto max-w-xl text-muted-foreground">

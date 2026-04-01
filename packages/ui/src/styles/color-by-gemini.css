@@ -108,12 +108,24 @@
   --chart-5: var(--fabora-green-700);
 
   /* Sidebar légèrement distinguée du fond principal */
-  --sidebar: color-mix(in srgb, var(--fabora-neutral-100) 3%, var(--fabora-neutral-900));
+  --sidebar: color-mix(
+    in srgb,
+    var(--fabora-neutral-100) 3%,
+    var(--fabora-neutral-900)
+  );
   --sidebar-foreground: var(--fabora-neutral-100);
   --sidebar-primary: var(--fabora-green-500);
   --sidebar-primary-foreground: var(--fabora-neutral-900);
-  --sidebar-accent: color-mix(in srgb, var(--fabora-neutral-100) 10%, transparent);
+  --sidebar-accent: color-mix(
+    in srgb,
+    var(--fabora-neutral-100) 10%,
+    transparent
+  );
   --sidebar-accent-foreground: var(--fabora-neutral-100);
-  --sidebar-border: color-mix(in srgb, var(--fabora-neutral-100) 12%, transparent);
+  --sidebar-border: color-mix(
+    in srgb,
+    var(--fabora-neutral-100) 12%,
+    transparent
+  );
   --sidebar-ring: var(--fabora-green-500);
 }

@@ -21,8 +21,6 @@ const navLinks = [
   { href: "/faq", label: "FAQ" },
 ]
 
-
-
 export function Navbar() {
   const pathname = usePathname()
 
@@ -32,7 +30,7 @@ export function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 font-headline text-xl font-black tracking-tighter text-foreground md:text-2xl"
+          className="font-headline flex items-center gap-2 text-xl font-black tracking-tighter text-foreground md:text-2xl"
         >
           <Image
             src="/logo/SVG/ICONE/icon.svg"
@@ -52,7 +50,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-xs font-bold uppercase tracking-wider transition-colors duration-300 ${
+                className={`text-xs font-bold tracking-wider uppercase transition-colors duration-300 ${
                   isActive
                     ? "border-b-2 border-accent pb-1 text-primary"
                     : "text-muted-foreground hover:text-primary"
@@ -64,16 +62,15 @@ export function Navbar() {
           })}
         </div>
 
-   
         <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle />
           <Button
             variant="ghost"
-            className="text-xs font-bold uppercase tracking-wider"
+            className="text-xs font-bold tracking-wider uppercase"
           >
             Nous contacter
           </Button>
-          <Button className="rounded-full bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-wider shadow-lg">
+          <Button className="rounded-full bg-primary px-6 py-2.5 text-xs font-bold tracking-wider uppercase shadow-lg">
             Nos services
           </Button>
         </div>
@@ -83,13 +80,18 @@ export function Navbar() {
           <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" aria-label="Menu" className="lg:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label="Menu"
+                className="lg:hidden"
+              >
                 <Menu className="size-6" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs">
               <SheetHeader>
-                <SheetTitle className="flex items-center gap-2 font-headline text-xl font-black">
+                <SheetTitle className="font-headline flex items-center gap-2 text-xl font-black">
                   <Image
                     src="/logo/SVG/ICONE/icon.svg"
                     alt="Fabora Impact"
@@ -107,7 +109,7 @@ export function Navbar() {
                     <Link
                       key={link.href}
                       href={link.href}
-                      className={`py-2 text-sm font-bold uppercase tracking-wider ${
+                      className={`py-2 text-sm font-bold tracking-wider uppercase ${
                         isActive
                           ? "text-primary"
                           : "text-muted-foreground hover:text-primary"

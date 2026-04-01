@@ -7,7 +7,7 @@ export function RegionalPresenceSection() {
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 lg:flex-row lg:gap-16">
         {/* Content */}
         <div className="w-full lg:w-1/2">
-          <h2 className="mb-6 font-headline text-3xl font-black leading-tight text-foreground md:mb-8 md:text-4xl lg:text-5xl">
+          <h2 className="font-headline mb-6 text-3xl leading-tight font-black text-foreground md:mb-8 md:text-4xl lg:text-5xl">
             Une Expertise Locale, Une Vision Régionale
           </h2>
           <p className="mb-8 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -48,7 +48,7 @@ export function RegionalPresenceSection() {
                 <MapPin className="size-16 text-primary opacity-20" />
               </div>
               {/* Location Indicator */}
-              <div className="absolute left-1/4 top-1/4 animate-pulse">
+              <div className="absolute top-1/4 left-1/4 animate-pulse">
                 <MapPin className="size-10 fill-accent text-accent" />
               </div>
             </div>
