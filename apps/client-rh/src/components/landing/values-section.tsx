@@ -1,35 +1,35 @@
-import { Award, Eye, Scale, Wallet, Zap } from "lucide-react"
+import { Award, Ear, Heart, Scale, Zap } from "lucide-react"
 
 const values = [
+  {
+    icon: Ear,
+    title: "Écoute authentique",
+    description:
+      "Nous courbons la tête avant d'ouvrir la bouche. Comprendre avant d'agir, toujours.",
+  },
   {
     icon: Award,
     title: "Professionnalisme",
     description:
-      "Une rigueur d&apos;exécution sans compromis pour des résultats qui dépassent les attentes.",
+      "Le Professionnalisme chez FOBORA IMPACT repose sur une expertise technique et engagée, la rigueur et la conscience professionnelle.",
   },
   {
-    icon: Eye,
-    title: "Transparence",
+    icon: Heart,
+    title: "Bienveillance sans complaisance",
     description:
-      "Une communication claire et honnête avec tous nos partenaires et collaborateurs.",
+      "Nous sommes chaleureux dans la relation et exigeants sur les résultats.",
   },
   {
     icon: Scale,
     title: "Conformité",
     description:
-      "Le respect strict des cadres légaux et normatifs pour sécuriser votre capital humain.",
-  },
-  {
-    icon: Wallet,
-    title: "Redevabilité",
-    description:
-      "Nous assumons la pleine responsabilité de nos actions et de leurs conséquences.",
+      "Nous accordons une grande importance au respect de l'ensemble des règles auxquelles nos clients sont soumis.",
   },
   {
     icon: Zap,
     title: "Impact",
     description:
-      "Créer une valeur ajoutée réelle et mesurable pour les économies africaines.",
+      "Chaque action que nous menons vise un résultat mesurable et utile, pour nos collaborateurs comme pour nos partenaires.",
   },
 ]
 

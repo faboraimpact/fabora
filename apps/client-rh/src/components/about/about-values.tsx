@@ -13,28 +13,28 @@ const values = [
     icon: Award,
     title: "Professionnalisme",
     description:
-      "Expertise technique et engagée, la rigueur et la conscience professionnelle.",
+      "Le Professionnalisme chez FOBORA IMPACT repose sur une expertise technique et engagée, la rigueur et la conscience professionnelle.",
     highlight: false,
   },
   {
     icon: Heart,
-    title: "Bienveillance",
+    title: "Bienveillance sans complaisance",
     description:
-      "Chaleureux dans la relation et exigeants sur les résultats. Sans complaisance.",
+      "Nous sommes chaleureux dans la relation et exigeants sur les résultats.",
     highlight: true,
   },
   {
     icon: Scale,
     title: "Conformité",
     description:
-      "Respect de l'ensemble des règles auxquelles nos clients sont soumis.",
+      "Nous accordons une grande importance au respect de l'ensemble des règles auxquelles nos clients sont soumis.",
     highlight: false,
   },
   {
     icon: Zap,
     title: "Impact",
     description:
-      "Chaque action que nous menons vise un résultat mesurable et utile.",
+      "Chaque action que nous menons vise un résultat mesurable et utile, pour nos collaborateurs comme pour nos partenaires.",
     highlight: false,
   },
 ]
