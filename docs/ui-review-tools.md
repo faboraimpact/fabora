@@ -26,27 +26,32 @@ Ce document décrit les outils mis en place pour assurer la qualité visuelle et
 ## 1. Agent UI Reviewer
 
 ### Fichier
+
 `.github/agents/ui-review.agent.md`
 
 ### Invocation
+
 ```
 @ui-review <votre requête>
 ```
 
 ### Fonctionnalités
+
 - Audit des pages pour cohérence visuelle
 - Vérification des contrastes WCAG AA/AAA
 - Analyse d'accessibilité (ARIA, labels, navigation clavier)
 - Génération de rapports structurés
 
 ### Format de rapport
+
 L'agent génère un fichier `reviews/ui/YYYY-MM-DD.md` avec un tableau par page :
 
-| Problème | Impact | Nature du problème | Code impacté |
-|----------|--------|-------------------|--------------|
-| Description | important/modéré/mineur | Type | `chemin:ligne` |
+| Problème    | Impact                  | Nature du problème | Code impacté   |
+| ----------- | ----------------------- | ------------------ | -------------- |
+| Description | important/modéré/mineur | Type               | `chemin:ligne` |
 
 ### Exemples d'utilisation
+
 ```
 @ui-review Audite la page d'accueil de client-rh
 @ui-review Vérifie l'accessibilité des formulaires
@@ -58,59 +63,65 @@ L'agent génère un fichier `reviews/ui/YYYY-MM-DD.md` avec un tableau par page 
 ## 2. Instructions Design System
 
 ### Fichier
+
 `.github/instructions/ui-design-system.instructions.md`
 
 ### Scope
+
 S'applique automatiquement aux fichiers `**/*.{tsx,jsx,css}`
 
 ### Contenu
 
 #### Palette de couleurs Fabora
 
-| Catégorie | Tokens |
-|-----------|--------|
-| **Green (Primary)** | `green-900`, `green-700`, `green-500`, `green-100` |
+| Catégorie           | Tokens                                                 |
+| ------------------- | ------------------------------------------------------ |
+| **Green (Primary)** | `green-900`, `green-700`, `green-500`, `green-100`     |
 | **Orange (Accent)** | `orange-900`, `orange-700`, `orange-500`, `orange-100` |
-| **Neutral** | `neutral-900` → `neutral-0` |
+| **Neutral**         | `neutral-900` → `neutral-0`                            |
 
 #### Contrastes validés ✅
 
-| Fond | Texte | Ratio | Usage |
-|------|-------|-------|-------|
-| neutral-100 | neutral-900 | 16.8:1 | Texte principal |
-| green-900 | white | 5.9:1 | Boutons primary |
-| orange-900 | white | 4.6:1 | Boutons accent |
-| neutral-0 | neutral-700 | 5.7:1 | Texte secondaire |
+| Fond        | Texte       | Ratio  | Usage            |
+| ----------- | ----------- | ------ | ---------------- |
+| neutral-100 | neutral-900 | 16.8:1 | Texte principal  |
+| green-900   | white       | 5.9:1  | Boutons primary  |
+| orange-900  | white       | 4.6:1  | Boutons accent   |
+| neutral-0   | neutral-700 | 5.7:1  | Texte secondaire |
 
 #### Contrastes interdits ❌
 
-| Fond | Texte | Ratio |
-|------|-------|-------|
+| Fond        | Texte       | Ratio |
+| ----------- | ----------- | ----- |
 | neutral-100 | neutral-500 | 2.1:1 |
-| white | green-500 | 2.9:1 |
-| white | orange-500 | 2.8:1 |
+| white       | green-500   | 2.9:1 |
+| white       | orange-500  | 2.8:1 |
 
 ---
 
 ## 3. Hook Pre-commit : Validation Contraste
 
 ### Script
+
 `scripts/check-contrast.js`
 
 ### Commande manuelle
+
 ```bash
 yarn check:contrast
 ```
 
 ### Intégration Lefthook
+
 Le hook est configuré dans `lefthook.yml` :
+
 ```yaml
 pre-commit:
   parallel: true
   jobs:
     - run: yarn format:fix
     - run: yarn lint:fix
-    - run: yarn check:contrast  # ← Nouveau
+    - run: yarn check:contrast # ← Nouveau
     - run: yarn build
 ```
 
@@ -122,6 +133,7 @@ pre-commit:
 4. **Blocage** : Empêche le commit si des problèmes sont détectés
 
 ### Sortie en cas d'erreur
+
 ```
 ❌ Problèmes de contraste détectés:
 
@@ -160,11 +172,11 @@ fabora/
 
 ### Ratios de contraste minimum
 
-| Type de contenu | WCAG AA | WCAG AAA |
-|-----------------|---------|----------|
-| Texte normal (< 18px) | 4.5:1 | 7:1 |
-| Grand texte (≥ 18px ou 14px bold) | 3:1 | 4.5:1 |
-| Éléments UI (bordures, icônes) | 3:1 | — |
+| Type de contenu                   | WCAG AA | WCAG AAA |
+| --------------------------------- | ------- | -------- |
+| Texte normal (< 18px)             | 4.5:1   | 7:1      |
+| Grand texte (≥ 18px ou 14px bold) | 3:1     | 4.5:1    |
+| Éléments UI (bordures, icônes)    | 3:1     | —        |
 
 ### Checklist accessibilité
 
