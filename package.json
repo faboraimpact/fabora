@@ -12,7 +12,8 @@
     "lint": "yarn workspaces foreach -A -p -i -t run lint",
     "lint:fix": "yarn workspaces foreach -A -p -i -t run lint:fix",
     "build": "yarn workspaces foreach -A -p -i -t run build",
-    "format:fix": "prettier --write ."
+    "format:fix": "prettier --write .",
+    "check:contrast": "node scripts/check-contrast.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",

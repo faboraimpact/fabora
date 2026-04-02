@@ -19,7 +19,7 @@ const services = [
 export function ServiceGrid() {
   return (
     <section className="relative z-10 mx-auto border-t border-border bg-background/40 px-4 py-16 md:px-8 md:pb-24 dark:bg-muted">
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6 mx-auto max-w-7xl ">
         {services.map((service) => {
           const Icon = service.icon
           return (

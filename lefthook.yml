@@ -3,6 +3,7 @@ pre-commit:
   jobs:
     - run: yarn format:fix
     - run: yarn lint:fix
+    - run: yarn check:contrast
     - run: yarn build
 
 commit-msg:

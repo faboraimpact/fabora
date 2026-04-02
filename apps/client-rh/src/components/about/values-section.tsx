@@ -10,7 +10,7 @@ const values = [
 
 export function ValuesSection() {
   return (
-    <section className="relative overflow-hidden bg-foreground py-16 md:py-24">
+    <section className="relative overflow-hidden bg-background/40 py-16 md:py-24">
       {/* African Pattern Overlay */}
       <div
         className="absolute inset-0 opacity-10"
@@ -24,10 +24,10 @@ export function ValuesSection() {
       <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8">
         {/* Header */}
         <div className="mb-12 text-center md:mb-20">
-          <h2 className="font-headline mb-4 text-3xl font-black text-background md:mb-6 md:text-4xl lg:text-5xl">
+          <h2 className="font-headline mb-4 text-3xl font-black text-foreground md:mb-6 md:text-4xl lg:text-5xl">
             Nos Valeurs Cardinales
           </h2>
-          <p className="mx-auto max-w-2xl text-muted">
+          <p className="mx-auto max-w-2xl text-muted-foreground">
             L&apos;ADN de Fabora Impact repose sur cinq piliers fondamentaux qui
             guident chacune de nos interventions.
           </p>
