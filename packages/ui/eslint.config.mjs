@@ -14,6 +14,12 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // Désactiver la règle no-html-link-for-pages car @fabora/ui est un package de composants, pas une app Next.js
+  {
+    rules: {
+      "@next/next/no-html-link-for-pages": "off",
+    },
+  },
 ])
 
 export default eslintConfig

@@ -1,0 +1,6 @@
+export { AboutHero } from "./about-hero"
+export { AboutIdentity } from "./about-identity"
+export { AboutMissionVision } from "./about-mission-vision"
+export { AboutDigital } from "./about-digital"
+export { AboutValues } from "./about-values"
+export { AboutCta } from "./about-cta"

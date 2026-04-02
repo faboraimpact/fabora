@@ -149,4 +149,25 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Fabora Typography - Temporary fallback to system fonts */
+  .font-headline {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-weight: 700;
+  }
+
+  .font-body {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+    font-weight: 400;
+  }
 }

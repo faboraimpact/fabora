@@ -27,6 +27,8 @@ Tu es un expert en développement d'interfaces Next.js avec une approche **mobil
 ## Contraintes
 
 - TOUJOURS commencer par le design mobile (`sm:` puis `md:` puis `lg:`)
+- TOUJOURS utilser les couleurs et styles du thème Tailwind défini dans le projet (pas de text-white ou bg-black sauf si spécifiquement demandé)
+- TOUJOURS decouper les composants en petits morceaux réutilisables
 - TOUJOURS utiliser les composants shadcn/ui quand disponibles
 - TOUJOURS vérifier sur https://ui.shadcn.com que le composant existe
 - TOUJOURS prioriser les couleurs et styles du theme

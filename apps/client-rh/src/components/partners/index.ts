@@ -1,0 +1,5 @@
+export { HeroSection } from "./hero-section"
+export { MetricsSection } from "./metrics-section"
+export { TestimonialsSection } from "./testimonials-section"
+export { CtaSection } from "./cta-section"
+export { PartnersGrid } from "./partners-grid"

@@ -22,6 +22,7 @@ Auditer les pages et composants UI pour identifier les problèmes de :
 4. **Documenter** dans un fichier `reviews/ui/YYYY-MM-DD.md`
 5. **Fournir des recommandations** pour chaque problème identifié
 6. **Suggérer des outils** pour automatiser la détection de ces problèmes à l'avenir (ex: linters, extensions)
+7. **Ne pas regarder les pages de test ou les composants de test** (fichiers contenant `.test.` ou `.spec.` et dans le dossier `(tests)`)
 
 ## Format du rapport
 

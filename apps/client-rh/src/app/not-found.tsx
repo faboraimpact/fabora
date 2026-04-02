@@ -1,6 +1,4 @@
-import { Navbar } from "@/src/components/landing/navbar"
-import { Footer } from "@/src/components/landing/footer"
-import { Hero404, PatternOverlay, DecorativeShapes } from "@/src/components/404"
+import { Hero404, PatternOverlay, DecorativeShapes } from "@/components/404"
 
 export default function NotFound() {
   return (

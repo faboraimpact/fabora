@@ -1,8 +1,4 @@
-import {
-  HeroSection,
-  ServiceGrid,
-  ValuesSection,
-} from "@/src/components/landing"
+import { HeroSection, ServiceGrid, ValuesSection } from "@/components/landing"
 
 export default function Home() {
   return (

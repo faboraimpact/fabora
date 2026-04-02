@@ -1,5 +1,3 @@
-"use client"
-
 import {
   Accordion,
   AccordionContent,
@@ -9,53 +7,63 @@ import {
 
 const faqItems = [
   {
-    id: "countries",
     question: "Quels pays couvrez-vous en Afrique ?",
     answer:
-      "Nous opérons actuellement dans 12 pays stratégiques, incluant le Sénégal, la Côte d'Ivoire, le Kenya, le Nigeria, et le Maroc. Notre réseau de partenaires nous permet d'étendre nos services sur l'ensemble du continent selon les besoins spécifiques de vos projets.",
+      "Nous opérons actuellement au Sénégal, Bénin, Niger, Burkina Faso et Togo. Notre réseau de partenaires nous permet d'étendre nos services sur l'ensemble de l'Afrique de l'Ouest selon les besoins spécifiques de vos projets.",
   },
   {
-    id: "platform",
     question: "Comment fonctionne la plateforme de conformité ?",
     answer:
-      "Notre plateforme digitale centralise la gestion documentaire, les processus de paie et les audits de conformité légale. Elle offre une visibilité en temps réel sur vos effectifs et garantit le respect strict des réglementations locales en vigueur.",
+      "Notre plateforme digitale centralise la gestion documentaire, les processus de paie et les audits de conformité légale. Elle offre une visibilité en temps réel sur vos effectifs et garantit le respect strict des réglementations locales en vigueur. Les clients peuvent accéder à tous les documents administratifs, contractuels et financiers relatifs au personnel.",
   },
   {
-    id: "apply",
     question: "Comment proposer ma candidature ?",
     answer:
       "Vous pouvez soumettre votre profil directement via notre portail carrière. Une fois votre CV enregistré, nos consultants spécialisés vous contacteront dès qu'une opportunité correspondant à votre expertise et vos ambitions se présentera.",
   },
   {
-    id: "duration",
     question: "Quelle est la durée moyenne d'un processus de recrutement ?",
     answer:
       "Pour des postes de cadres et experts, le processus dure généralement entre 4 et 6 semaines, incluant les phases de sourcing, d'évaluation approfondie et de sélection finale avec le client.",
+  },
+  {
+    question: "Quels sont vos tarifs pour le recrutement ?",
+    answer:
+      "Nos tarifs varient selon le type de mission : recrutement permanent (15% à 25% du salaire annuel brut), chasse de tête pour profils senior (15% à 20%), et intérim (salaire + charges + marge de 10% à 12%). Contactez-nous pour un devis personnalisé.",
+  },
+  {
+    question: "Proposez-vous des services de coaching et formation ?",
+    answer:
+      "Oui, nous proposons du coaching individuel et collectif (30 000 à 50 000 F CFA/heure) ainsi que des formations (forfait 50 000 F CFA/heure/personne). Nous accompagnons également les organisations dans l'élaboration de manuels de politiques et procédures RH.",
   },
 ]
 
 export function FaqAccordion() {
   return (
-    <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:py-20">
+    <section className="mx-auto max-w-4xl px-4 py-12 md:px-8 md:py-20">
       {/* Section Title */}
-      <h2 className="font-headline mb-8 flex items-center gap-3 text-2xl font-black sm:text-3xl">
-        <span className="h-6 w-1.5 rounded-full bg-accent sm:h-8 sm:w-2" />
-        Questions Fréquentes
-      </h2>
+      <div className="mb-8 md:mb-12">
+        <h2 className="font-headline flex items-center gap-3 text-2xl font-black text-foreground md:text-3xl">
+          <span className="h-6 w-1.5 rounded-full bg-accent md:h-8 md:w-2" />
+          Questions Fréquentes
+        </h2>
+      </div>
 
       {/* Accordion */}
-      <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-        {faqItems.map((item) => (
+      <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
+        {faqItems.map((item, index) => (
           <AccordionItem
-            key={item.id}
-            value={item.id}
-            className="rounded-xl border border-transparent bg-card transition-all hover:border-border/30"
+            key={index}
+            value={`item-${index}`}
+            className="overflow-hidden rounded-xl border-0 bg-muted/50 transition-all hover:border-border/30 data-[state=open]:bg-card"
           >
-            <AccordionTrigger className="font-headline px-5 py-4 text-base font-bold hover:no-underline sm:px-8 sm:py-6 sm:text-lg">
-              {item.question}
+            <AccordionTrigger className="px-6 py-4 text-left hover:no-underline md:px-8 md:py-6">
+              <span className="font-headline pr-4 text-base font-bold md:text-lg">
+                {item.question}
+              </span>
             </AccordionTrigger>
-            <AccordionContent className="px-5 pb-4 text-sm leading-relaxed text-muted-foreground sm:px-8 sm:pb-6 sm:text-base">
-              {item.answer}
+            <AccordionContent className="px-6 pb-4 text-muted-foreground md:px-8 md:pb-6">
+              <p className="leading-relaxed">{item.answer}</p>
             </AccordionContent>
           </AccordionItem>
         ))}

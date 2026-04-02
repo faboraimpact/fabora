@@ -1,5 +1,3 @@
-export { Navbar } from "./navbar"
 export { HeroSection } from "./hero-section"
 export { ServiceGrid } from "./service-grid"
 export { ValuesSection } from "./values-section"
-export { Footer } from "./footer"

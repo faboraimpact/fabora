@@ -70,8 +70,8 @@ export function Navbar() {
           >
             Nous contacter
           </Button>
-          <Button className="rounded-full bg-primary px-6 py-2.5 text-xs font-bold tracking-wider uppercase shadow-lg">
-            Nos services
+          <Button className="bg-primary px-6 py-2.5 text-xs font-bold tracking-wider uppercase shadow-lg">
+            Demander une démo
           </Button>
         </div>
 
@@ -126,8 +126,8 @@ export function Navbar() {
                 >
                   Nous contacter
                 </Button>
-                <Button className="w-full justify-center rounded-full bg-primary text-xs font-bold uppercase">
-                  Nos services
+                <Button className="w-full justify-center bg-primary text-xs font-bold uppercase">
+                  Demander une démo
                 </Button>
               </div>
             </SheetContent>

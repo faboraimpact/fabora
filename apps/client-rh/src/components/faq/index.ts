@@ -1,4 +1,4 @@
-export { HeroSection } from "./hero-section"
-export { CategoryGrid } from "./category-grid"
+export { FaqHero } from "./faq-hero"
+export { FaqCategories } from "./faq-categories"
 export { FaqAccordion } from "./faq-accordion"
-export { CtaSection } from "./cta-section"
+export { FaqCta } from "./faq-cta"

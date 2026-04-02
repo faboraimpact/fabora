@@ -1,25 +1,18 @@
-import type { Metadata } from "next"
+import { FaqHero, FaqCategories, FaqAccordion, FaqCta } from "@/components/faq"
 
-import {
-  HeroSection,
-  CategoryGrid,
-  FaqAccordion,
-  CtaSection,
-} from "@/src/components/faq"
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "FAQ | Fabora Impact",
   description:
-    "Trouvez des réponses à vos questions sur nos services de recrutement, intérim, plateforme digitale et conseil RH en Afrique.",
+    "Trouvez des réponses à vos questions sur nos services de recrutement, intérim, conseil RH et notre plateforme digitale en Afrique de l'Ouest.",
 }
 
 export default function FaqPage() {
   return (
-    <main className="bg-background selection:bg-primary/20 selection:text-primary">
-      <HeroSection />
-      <CategoryGrid />
+    <main className="selection:bg-muted">
+      <FaqHero />
+      <FaqCategories />
       <FaqAccordion />
-      <CtaSection />
+      <FaqCta />
     </main>
   )
 }

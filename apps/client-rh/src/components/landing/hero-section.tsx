@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@fabora/ui/components/button"
-import { ShieldCheck, Users, Star, Target } from "lucide-react"
+import { ShieldCheck, Star, ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -32,7 +32,7 @@ export function HeroSection() {
 
             {/* Title */}
             <h1 className="font-headline text-4xl leading-tight font-black tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-              Des talents qualifiés pour un{" "}
+              Des pratiques RH alignées et conformes pour un{" "}
               <span className="relative text-primary">
                 impact réel
                 <svg
@@ -57,19 +57,24 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center sm:pt-4">
-              <Button className="w-full rounded-full bg-accent px-8 py-5 text-base font-bold text-white shadow-xl hover:bg-accent/90 sm:w-auto md:px-10 md:text-lg">
-                Découvrir nos services
-              </Button>
               <Button
+                className="border-2 border-accent bg-accent px-8 py-5 text-base font-bold sm:w-auto md:px-10 md:text-lg"
+                size="lg"
+              >
+                Demander une démo
+                <ArrowRight className="ml-2 size-4" />
+              </Button>
+              {/* <Button
                 variant="outline"
-                className="w-full rounded-full border-2 border-primary px-8 py-5 text-base font-bold text-primary hover:bg-primary/10 sm:w-auto md:px-10 md:text-lg"
+                size="lg"
+                className="border-2 border-primary px-8 py-5 text-base font-bold text-primary sm:w-auto md:px-10 md:text-lg"
               >
                 Nous contacter
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center gap-6 pt-8 opacity-70 md:gap-8 md:pt-12">
+            {/* <div className="flex flex-wrap items-center gap-6 pt-8 opacity-70 md:gap-8 md:pt-12">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="size-5 text-primary" />
                 <span className="text-xs font-bold tracking-tighter uppercase md:text-sm">
@@ -82,19 +87,18 @@ export function HeroSection() {
                   +5000 Placements
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Visual Content */}
           <div className="relative lg:col-span-5">
             {/* Main Hero Image */}
-            <div className="relative z-10 aspect-4/5 overflow-hidden rounded-3xl shadow-2xl md:aspect-auto md:rounded-[2.5rem]">
+            <div className="relative z-10 h-[400px] overflow-hidden rounded-3xl shadow-2xl md:h-[400px] md:rounded-[2.5rem] lg:h-[500px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFesoL46Ocq7YkqDQQJzR0p9mWtfjbGN4LDkSOGcd07ZYfEhsL9yHij7U-yMxKKDlSgOarDS1QCg9OGk7oubQSy2MuM-PTtKj1uB3WeUabAJ0hDHZmuQXqq3IgkVMnD544QUzB7Hd8ASN40xflt9OBsbl8kQ0BG26uENxEIQ_3HU8TCZTrgYDAjqsZ2wiQN07SVVzUjHwOXvvNjcSbqg3uimZQbaoF1ZKlAQtp_x34Ftr8NWAMnywijeQixCKp13dL0MJTJ4dkEOs"
+                src="/images/herosection-man.jpg"
                 alt="Professional African team collaborating"
-                width={600}
-                height={750}
-                className="h-full w-full object-cover"
+                fill
+                className="lg:object-fit object-cover object-top grayscale-[0.2] transition-all duration-700 hover:grayscale-0"
                 priority
               />
               {/* Overlay Gradient */}
@@ -102,9 +106,9 @@ export function HeroSection() {
             </div>
 
             {/* Floating Card - Top Right */}
-            <div className="borderforeground/50 absolute -top-4 -right-4 z-20 hidden rounded-2xl border bg-background/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
+            {/* <div className="borderforeground/50 absolute -top-4 -right-4 z-20 hidden rounded-2xl border bg-background/70 p-4 shadow-xl backdrop-blur-md md:block lg:-top-6 lg:-right-6">
               <div className="flex items-center gap-3">
-                <div className="flex size-10 items-center justify-center rounded-lg bg-accent text-white">
+                <div className="flex size-10 items-center justify-center rounded-lg bg-accent">
                   <Target className="size-5" />
                 </div>
                 <div>
@@ -114,10 +118,10 @@ export function HeroSection() {
                   <p className="font-bold text-foreground">Recrutement Elite</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Floating Card - Left */}
-            <div className="borderforeground/50 absolute top-1/4 -left-8 z-20 hidden rounded-2xl border bg-background/70 p-5 shadow-xl backdrop-blur-md xl:block">
+            {/* <div className="borderforeground/50 absolute top-1/4 -left-8 z-20 hidden rounded-2xl border bg-background/70 p-5 shadow-xl backdrop-blur-md xl:block">
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <div className="size-2 rounded-full bg-secondary" />
@@ -127,21 +131,24 @@ export function HeroSection() {
                   <div className="h-full w-2/3 rounded-full bg-primary" />
                 </div>
               </div>
-            </div>
-
+            </div> */}
             {/* Floating Card - Bottom */}
-            <div className="borderforeground/50 absolute -bottom-6 left-1/4 z-20 rounded-2xl border bg-background/70 p-4 shadow-xl backdrop-blur-md md:-bottom-8">
-              <div className="flex items-center gap-4">
-                <div className="flex -space-x-3">
-                  <div className="borderforeground size-10 rounded-full border-2 bg-muted" />
-                  <div className="borderforeground size-10 rounded-full border-2 bg-muted-foreground/30" />
-                  <div className="borderforeground flex size-10 items-center justify-center rounded-full border-2 bg-primary text-xs font-bold text-white">
-                    +12
+            <div className="absolute -bottom-8 left-1/2 z-20 -translate-x-1/2 rounded-2xl border border-foreground/50 bg-background/70 p-4 shadow-xl backdrop-blur-md lg:-bottom-6 lg:-left-12 lg:left-auto lg:translate-x-0">
+              <div className="flex flex-col items-start gap-2">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="size-7 text-primary" />
+                  <div>
+                    <p className="text-xs font-bold tracking-widest text-primary uppercase">
+                      Status Sécurité
+                    </p>
+                    <p className="text-on-surface text-sm font-black">
+                      100% Conforme
+                    </p>
                   </div>
                 </div>
-                <p className="text-sm font-bold text-foreground">
-                  Talents disponibles
-                </p>
+                <div className="bg-surface-container-highest h-2 w-full overflow-hidden rounded-full">
+                  <div className="h-full w-full bg-primary" />
+                </div>
               </div>
             </div>
           </div>
