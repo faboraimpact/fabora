@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Quelle est la durée moyenne d'un processus de recrutement ?",
     answer:
-      "Pour des postes de cadres et experts, le processus dure généralement entre 4 et 6 semaines, incluant les phases de sourcing, d'évaluation approfondie et de sélection finale avec le client.",
+      "le processus dure généralement entre 4 et 6 semaines, incluant les phases de sourcing, d'évaluation approfondie et de sélection finale avec le client.",
   },
   {
     question: "Proposez-vous des services de coaching et formation ?",

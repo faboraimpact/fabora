@@ -37,7 +37,7 @@ export function FaqCta() {
               <Link href="/contact">Contactez-nous</Link>
             </Button>
 
-            <Button
+            {/* <Button
               asChild
               variant="outline"
               size="lg"
@@ -47,7 +47,7 @@ export function FaqCta() {
                 <Phone className="size-4" />
                 Appeler le support
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
