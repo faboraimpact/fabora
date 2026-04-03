@@ -8,7 +8,7 @@ const testimonials = [
     name: "Mamadou Lamine Ndiaye",
     role: "Directeur General, Jamila entreprise",
     avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAFZvpRF379B1zac09eVAglIYNvv93X2Gag-_rK40JmDpYtn_O3_HTMLmvHxYH6EIK73Kc2dzf35wb49JztbEVr17P2ktYziC6BdtTpKu-1d2TQP0O30PgJrLdgpSoGMwLwO6gikP6hgWq9rQuEaO-e6vV3xvyzqIwj6qm3bPssG4wO8qn-nLl-Oc6GVbzopU9atnA1pgXD0wGvd-x4IleGQtbiwaRX--BjdI_wByQ0cUI283LlViZ7-qUZ6P4A9D4JOKpWpD4hJnI",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8R56a0tSHb1-X1iMoRD27AV1-FPRzKTdZZnOQ8czCaj2isn0hdbyT_Egxz6vOEQhYBuJOykXhxK85I9WLZTzLsqf3LAvr3E98LMblFVufc8ml-qPGlSFH4abB9Rh2D8KeJXGM8m1H0sS3MxjLfG3P26GeyoTKvox5mFXPngp_4DKJ6FfUWPPNO6JAGrH5w2_19yt-NqwYToaa9e5HpaPnPdNlAsaCgzNQWXbCiZ0EWQeSy9-0nEHgXSgCu8uTgTi-T3ZvxWB42o",
   },
   {
     quote:
