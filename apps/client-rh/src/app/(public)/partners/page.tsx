@@ -5,6 +5,7 @@ import {
   TestimonialsSection,
   CtaSection,
   PartnersGrid,
+  StrategicPositioningSection,
 } from "@/components/partners"
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function PartnersPage() {
     <main>
       <HeroSection />
       <MetricsSection />
+      <StrategicPositioningSection />
       <PartnersGrid />
       <TestimonialsSection />
       <CtaSection />

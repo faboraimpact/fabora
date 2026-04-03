@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@fabora/ui/components/button"
 import { ShieldCheck, Star, ArrowRight } from "lucide-react"
 
@@ -58,11 +59,14 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center sm:pt-4">
               <Button
+                asChild
                 className="border-2 border-accent bg-accent px-8 py-5 text-base font-bold sm:w-auto md:px-10 md:text-lg"
                 size="lg"
               >
-                Demander une démo
-                <ArrowRight className="ml-2 size-4" />
+                <Link href="/contact">
+                  Demander une démo
+                  <ArrowRight className="ml-2 size-4" />
+                </Link>
               </Button>
               {/* <Button
                 variant="outline"

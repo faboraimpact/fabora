@@ -65,13 +65,17 @@ export function Navbar() {
         <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle />
           <Button
+            asChild
             variant="ghost"
             className="text-xs font-bold tracking-wider uppercase"
           >
-            Nous contacter
+            <Link href="/contact">Nous contacter</Link>
           </Button>
-          <Button className="bg-primary px-6 py-2.5 text-xs font-bold tracking-wider uppercase shadow-lg">
-            Demander une démo
+          <Button
+            asChild
+            className="bg-primary px-6 py-2.5 text-xs font-bold tracking-wider uppercase shadow-lg"
+          >
+            <Link href="/contact">Demander une démo</Link>
           </Button>
         </div>
 
@@ -121,13 +125,17 @@ export function Navbar() {
                 })}
                 <hr className="my-4 border-border" />
                 <Button
+                  asChild
                   variant="outline"
                   className="w-full justify-center text-xs font-bold uppercase"
                 >
-                  Nous contacter
+                  <Link href="/contact">Nous contacter</Link>
                 </Button>
-                <Button className="w-full justify-center bg-primary text-xs font-bold uppercase">
-                  Demander une démo
+                <Button
+                  asChild
+                  className="w-full justify-center bg-primary text-xs font-bold uppercase"
+                >
+                  <Link href="/contact">Demander une démo</Link>
                 </Button>
               </div>
             </SheetContent>

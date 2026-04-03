@@ -27,14 +27,9 @@ const faqItems = [
       "Pour des postes de cadres et experts, le processus dure généralement entre 4 et 6 semaines, incluant les phases de sourcing, d'évaluation approfondie et de sélection finale avec le client.",
   },
   {
-    question: "Quels sont vos tarifs pour le recrutement ?",
-    answer:
-      "Nos tarifs varient selon le type de mission : recrutement permanent (15% à 25% du salaire annuel brut), chasse de tête pour profils senior (15% à 20%), et intérim (salaire + charges + marge de 10% à 12%). Contactez-nous pour un devis personnalisé.",
-  },
-  {
     question: "Proposez-vous des services de coaching et formation ?",
     answer:
-      "Oui, nous proposons du coaching individuel et collectif (30 000 à 50 000 F CFA/heure) ainsi que des formations (forfait 50 000 F CFA/heure/personne). Nous accompagnons également les organisations dans l'élaboration de manuels de politiques et procédures RH.",
+      "Oui, nous proposons du coaching individuel et collectif ainsi que des formations sur mesure adaptées à vos besoins. Nous accompagnons également les organisations dans l'élaboration de manuels de politiques et procédures RH. Contactez-nous pour en savoir plus sur nos prestations.",
   },
 ]
 
