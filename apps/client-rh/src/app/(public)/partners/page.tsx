@@ -18,7 +18,7 @@ export default function PartnersPage() {
   return (
     <main>
       <HeroSection />
-      <MetricsSection />
+      {/* <MetricsSection /> */}
       <StrategicPositioningSection />
       <PartnersGrid />
       <TestimonialsSection />

@@ -4,9 +4,9 @@ import { Quote } from "lucide-react"
 const testimonials = [
   {
     quote:
-      "L'expertise de Fabora dans le recrutement de cadres techniques nous a permis d'accélérer notre transition digitale avec des talents locaux de premier ordre.",
-    name: "Amara Diallo",
-    role: "Directrice RH, Global Bank",
+      "L'expertise de Fabora dans le recrutement nous a permis d'accélérer notre transition digitale avec des talents locaux de premier ordre.",
+    name: "Mamadou Lamine Ndiaye",
+    role: "Directeur General, Jamila entreprise",
     avatar:
       "https://lh3.googleusercontent.com/aida-public/AB6AXuAFZvpRF379B1zac09eVAglIYNvv93X2Gag-_rK40JmDpYtn_O3_HTMLmvHxYH6EIK73Kc2dzf35wb49JztbEVr17P2ktYziC6BdtTpKu-1d2TQP0O30PgJrLdgpSoGMwLwO6gikP6hgWq9rQuEaO-e6vV3xvyzqIwj6qm3bPssG4wO8qn-nLl-Oc6GVbzopU9atnA1pgXD0wGvd-x4IleGQtbiwaRX--BjdI_wByQ0cUI283LlViZ7-qUZ6P4A9D4JOKpWpD4hJnI",
   },

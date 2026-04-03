@@ -28,14 +28,6 @@ export function AboutCta() {
           >
             <Link href="/contact">Nous Contacter</Link>
           </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="px-8 py-5 text-base font-bold md:px-10 md:text-lg"
-          >
-            <Link href="/services">Consulter nos Services</Link>
-          </Button>
         </div>
       </div>
     </section>

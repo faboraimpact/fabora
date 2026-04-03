@@ -40,7 +40,7 @@ export function AboutIdentity() {
             </div>
 
             {/* Stats Cards */}
-            <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:gap-8">
+            {/* <div className="mt-8 grid grid-cols-2 gap-4 md:mt-12 md:gap-8">
               <Card className="border-0 bg-background shadow-sm">
                 <CardContent className="p-4 md:p-6">
                   <span className="font-headline block text-3xl font-black text-primary md:text-4xl">
@@ -61,7 +61,7 @@ export function AboutIdentity() {
                   </span>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
