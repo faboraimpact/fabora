@@ -7,24 +7,21 @@ const testimonials = [
       "L'expertise de Fabora dans le recrutement nous a permis d'accélérer notre transition digitale avec des talents locaux de premier ordre.",
     name: "Mamadou Lamine Ndiaye",
     role: "Directeur General, Jamila entreprise",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8R56a0tSHb1-X1iMoRD27AV1-FPRzKTdZZnOQ8czCaj2isn0hdbyT_Egxz6vOEQhYBuJOykXhxK85I9WLZTzLsqf3LAvr3E98LMblFVufc8ml-qPGlSFH4abB9Rh2D8KeJXGM8m1H0sS3MxjLfG3P26GeyoTKvox5mFXPngp_4DKJ6FfUWPPNO6JAGrH5w2_19yt-NqwYToaa9e5HpaPnPdNlAsaCgzNQWXbCiZ0EWQeSy9-0nEHgXSgCu8uTgTi-T3ZvxWB42o",
+    avatar: "/images/profil.jpg",
   },
   {
     quote:
       "Leur gestion de l'intérim est d'une fluidité exemplaire. Fabora comprend les enjeux opérationnels du secteur de l'énergie et y répond avec précision.",
     name: "Marc-André Koffi",
     role: "VP Ops, Energy Corp",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8R56a0tSHb1-X1iMoRD27AV1-FPRzKTdZZnOQ8czCaj2isn0hdbyT_Egxz6vOEQhYBuJOykXhxK85I9WLZTzLsqf3LAvr3E98LMblFVufc8ml-qPGlSFH4abB9Rh2D8KeJXGM8m1H0sS3MxjLfG3P26GeyoTKvox5mFXPngp_4DKJ6FfUWPPNO6JAGrH5w2_19yt-NqwYToaa9e5HpaPnPdNlAsaCgzNQWXbCiZ0EWQeSy9-0nEHgXSgCu8uTgTi-T3ZvxWB42o",
+    avatar: "/images/profil.jpg",
   },
   {
     quote:
       "Un partenaire stratégique pour notre mise en conformité RH. Leur approche rigoureuse nous a apporté une sérénité indispensable à notre croissance.",
     name: "Isabelle Mensah",
     role: "Chief People Officer, AfriTech",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCTx2aiEXwwfGaox4uqEZ467XuzfTGxm-7TBkrmqgyPd5YIA1yNCsWSFsiHW9KEZVgpFLNU9axAGQNLdn2suOmheuYm3OKZi4i3UTPp225UwVuYvgtgUQ3fQWpBqSIP4S-l-qLmz1DCzV457CRrrvpUOBXOIHb8seEBTKVNqVemsYEWMD3pw8PIqGQYX5eEwBbJ5a9bT_we7aEOc0YxerX6y94QaptOclCbIDsvhsvK8iBzVX-yK19vC_rUS0JOCb0t9DKy92CUb2M",
+    avatar: "/images/profil.jpg",
   },
 ]
 
