@@ -23,13 +23,13 @@ export function CtaSection() {
               >
                 Nous contacter
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="rounded-full border-primary-foreground/20 bg-primary-foreground/10 px-8 py-6 text-base font-bold text-primary-foreground backdrop-blur-md transition-all hover:bg-primary-foreground/20 md:px-10"
               >
                 Nos études de cas
-              </Button>
+              </Button> */}
             </div>
           </div>
 
