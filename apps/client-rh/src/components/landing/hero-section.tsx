@@ -97,9 +97,9 @@ export function HeroSection() {
           {/* Visual Content */}
           <div className="relative lg:col-span-5">
             {/* Main Hero Image */}
-            <div className="relative z-10 h-[400px] overflow-hidden rounded-3xl shadow-2xl md:h-[400px] md:rounded-[2.5rem] lg:h-[500px]">
+            <div className="relative z-10 h-[400px] overflow-hidden rounded-3xl shadow-2xl md:h-[500px] md:rounded-[2.5rem] lg:h-[500px]">
               <Image
-                src="/images/herosection-man.jpg"
+                src="/images/herosection.jpg"
                 alt="Professional African team collaborating"
                 fill
                 className="lg:object-fit object-cover object-top grayscale-[0.2] transition-all duration-700 hover:grayscale-0"
