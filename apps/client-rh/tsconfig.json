@@ -1,7 +1,6 @@
 {
   "extends": "@fabora/ts-config/nextjs.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@fabora/ui/*": ["../../packages/ui/src/*"]

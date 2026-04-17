@@ -5,8 +5,8 @@ const testimonials = [
   {
     quote:
       "L'expertise de Fabora dans le recrutement nous a permis d'accélérer notre transition digitale avec des talents locaux de premier ordre.",
-    name: "Mamadou Lamine Ndiaye",
-    role: "Directeur General, Jamila entreprise",
+    name: "Ousmane Sy",
+    role: "Directeur General",
     avatar: "/images/profil.jpg",
   },
   {

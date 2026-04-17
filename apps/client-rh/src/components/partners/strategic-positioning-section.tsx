@@ -37,7 +37,7 @@ export function StrategicPositioningSection() {
             Positionnement Stratégique
           </h2>
           <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:mt-4 md:text-base">
-            FABORA Impact offre une solution RH complète intégrant la gestion
+            FABORA IMPACT offre une solution RH complète intégrant la gestion
             digitale et la conformité aux audits, accompagnant les leaders et
             faisant évoluer les pratiques managériales.
           </p>

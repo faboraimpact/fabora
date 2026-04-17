@@ -1,4 +1,4 @@
-import { Mail, MapPin } from "lucide-react"
+import { Mail, MessageCircle, MapPin } from "lucide-react"
 import Image from "next/image"
 
 export function ContactInfo() {
@@ -26,6 +26,24 @@ export function ContactInfo() {
                 className="text-sm text-muted-foreground transition-colors hover:text-primary"
               >
                 contact@faboraimpact.com
+              </a>
+            </div>
+          </div>
+
+          {/* WhatsApp */}
+          <div className="flex gap-4">
+            <div className="flex size-12 flex-shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+              <MessageCircle className="size-5" />
+            </div>
+            <div>
+              <h4 className="mb-1 font-bold text-primary">WhatsApp</h4>
+              <a
+                href="https://wa.me/221787822626"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground transition-colors hover:text-primary"
+              >
+                78 782 26 26
               </a>
             </div>
           </div>

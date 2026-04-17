@@ -21,7 +21,7 @@ export function AboutIdentity() {
           {/* Right Column - Content */}
           <div className="md:col-span-7">
             <blockquote className="mb-6 text-xl leading-snug font-light text-foreground md:mb-8 md:text-2xl">
-              &quot;FABORA Impact affirme une identité claire, engagée et
+              &quot;FABORA IMPACT affirme une identité claire, engagée et
               tournée vers le résultat.&quot;
             </blockquote>
 

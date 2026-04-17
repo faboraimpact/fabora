@@ -15,7 +15,7 @@ const partners = [
   // { icon: Landmark, name: "Global Bank" },
   // { icon: Zap, name: "Energy Corp" },
   // { icon: Terminal, name: "AfriTech Solutions" },
-  { icon: Truck, name: "JAMILA ENTREPRISE" },
+  // { icon: Truck, name: "JAMILA ENTREPRISE" },
   { icon: Factory, name: "IndusAfric" },
   // { icon: ShoppingBag, name: "RetailOne" },
   // { icon: HeartPulse, name: "MedLink" },

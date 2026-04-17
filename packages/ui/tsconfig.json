@@ -1,7 +1,6 @@
 {
   "extends": "@fabora/ts-config/react-library.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@fabora/ui/*": ["./src/*"]
     }
